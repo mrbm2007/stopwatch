@@ -1,0 +1,104 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebServer", "WebServer\WebServer.csproj", "{9DCF0D06-F2B4-40C9-91C2-A5AFEB5C1C71}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DF135C24-2FC8-46AD-A3BF-6ABB775CC671} = {DF135C24-2FC8-46AD-A3BF-6ABB775CC671}
+		{A8BFA025-5F26-4977-89A5-3D672BF2B16D} = {A8BFA025-5F26-4977-89A5-3D672BF2B16D}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stopwatch", "stopwatch\Stopwatch.csproj", "{A8BFA025-5F26-4977-89A5-3D672BF2B16D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{79D96B7C-5B47-4EDC-B3AE-5D958F5D11BD}"
+	ProjectSection(SolutionItems) = preProject
+		Setup\Setup.iss = Setup\Setup.iss
+		to_do_on_server.sql = to_do_on_server.sql
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API_test", "API_test\API_test.csproj", "{DF135C24-2FC8-46AD-A3BF-6ABB775CC671}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+		Release-Fater|Any CPU = Release-Fater|Any CPU
+		Release-Fater|x86 = Release-Fater|x86
+		Release-Sadid|Any CPU = Release-Sadid|Any CPU
+		Release-Sadid|x86 = Release-Sadid|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9DCF0D06-F2B4-40C9-91C2-A5AFEB5C1C71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DCF0D06-F2B4-40C9-91C2-A5AFEB5C1C71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DCF0D06-F2B4-40C9-91C2-A5AFEB5C1C71}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{9DCF0D06-F2B4-40C9-91C2-A5AFEB5C1C71}.Debug|x86.Build.0 = Debug|Any CPU
+		{9DCF0D06-F2B4-40C9-91C2-A5AFEB5C1C71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DCF0D06-F2B4-40C9-91C2-A5AFEB5C1C71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DCF0D06-F2B4-40C9-91C2-A5AFEB5C1C71}.Release|x86.ActiveCfg = Release|Any CPU
+		{9DCF0D06-F2B4-40C9-91C2-A5AFEB5C1C71}.Release|x86.Build.0 = Release|Any CPU
+		{9DCF0D06-F2B4-40C9-91C2-A5AFEB5C1C71}.Release-Fater|Any CPU.ActiveCfg = Release|Any CPU
+		{9DCF0D06-F2B4-40C9-91C2-A5AFEB5C1C71}.Release-Fater|Any CPU.Build.0 = Release|Any CPU
+		{9DCF0D06-F2B4-40C9-91C2-A5AFEB5C1C71}.Release-Fater|x86.ActiveCfg = Release|Any CPU
+		{9DCF0D06-F2B4-40C9-91C2-A5AFEB5C1C71}.Release-Fater|x86.Build.0 = Release|Any CPU
+		{9DCF0D06-F2B4-40C9-91C2-A5AFEB5C1C71}.Release-Sadid|Any CPU.ActiveCfg = Release|Any CPU
+		{9DCF0D06-F2B4-40C9-91C2-A5AFEB5C1C71}.Release-Sadid|Any CPU.Build.0 = Release|Any CPU
+		{9DCF0D06-F2B4-40C9-91C2-A5AFEB5C1C71}.Release-Sadid|x86.ActiveCfg = Release|Any CPU
+		{9DCF0D06-F2B4-40C9-91C2-A5AFEB5C1C71}.Release-Sadid|x86.Build.0 = Release|Any CPU
+		{A8BFA025-5F26-4977-89A5-3D672BF2B16D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8BFA025-5F26-4977-89A5-3D672BF2B16D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8BFA025-5F26-4977-89A5-3D672BF2B16D}.Debug|x86.ActiveCfg = Debug|x86
+		{A8BFA025-5F26-4977-89A5-3D672BF2B16D}.Debug|x86.Build.0 = Debug|x86
+		{A8BFA025-5F26-4977-89A5-3D672BF2B16D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8BFA025-5F26-4977-89A5-3D672BF2B16D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8BFA025-5F26-4977-89A5-3D672BF2B16D}.Release|x86.ActiveCfg = Release|x86
+		{A8BFA025-5F26-4977-89A5-3D672BF2B16D}.Release|x86.Build.0 = Release|x86
+		{A8BFA025-5F26-4977-89A5-3D672BF2B16D}.Release-Fater|Any CPU.ActiveCfg = Release-Fater|Any CPU
+		{A8BFA025-5F26-4977-89A5-3D672BF2B16D}.Release-Fater|Any CPU.Build.0 = Release-Fater|Any CPU
+		{A8BFA025-5F26-4977-89A5-3D672BF2B16D}.Release-Fater|x86.ActiveCfg = Release-Fater|x86
+		{A8BFA025-5F26-4977-89A5-3D672BF2B16D}.Release-Fater|x86.Build.0 = Release-Fater|x86
+		{A8BFA025-5F26-4977-89A5-3D672BF2B16D}.Release-Sadid|Any CPU.ActiveCfg = Release-Fater|Any CPU
+		{A8BFA025-5F26-4977-89A5-3D672BF2B16D}.Release-Sadid|Any CPU.Build.0 = Release-Fater|Any CPU
+		{A8BFA025-5F26-4977-89A5-3D672BF2B16D}.Release-Sadid|x86.ActiveCfg = Release-Fater|x86
+		{A8BFA025-5F26-4977-89A5-3D672BF2B16D}.Release-Sadid|x86.Build.0 = Release-Fater|x86
+		{DF135C24-2FC8-46AD-A3BF-6ABB775CC671}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF135C24-2FC8-46AD-A3BF-6ABB775CC671}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF135C24-2FC8-46AD-A3BF-6ABB775CC671}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{DF135C24-2FC8-46AD-A3BF-6ABB775CC671}.Debug|x86.Build.0 = Debug|Any CPU
+		{DF135C24-2FC8-46AD-A3BF-6ABB775CC671}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF135C24-2FC8-46AD-A3BF-6ABB775CC671}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF135C24-2FC8-46AD-A3BF-6ABB775CC671}.Release|x86.ActiveCfg = Release|Any CPU
+		{DF135C24-2FC8-46AD-A3BF-6ABB775CC671}.Release|x86.Build.0 = Release|Any CPU
+		{DF135C24-2FC8-46AD-A3BF-6ABB775CC671}.Release-Fater|Any CPU.ActiveCfg = Release|Any CPU
+		{DF135C24-2FC8-46AD-A3BF-6ABB775CC671}.Release-Fater|Any CPU.Build.0 = Release|Any CPU
+		{DF135C24-2FC8-46AD-A3BF-6ABB775CC671}.Release-Fater|x86.ActiveCfg = Release|Any CPU
+		{DF135C24-2FC8-46AD-A3BF-6ABB775CC671}.Release-Fater|x86.Build.0 = Release|Any CPU
+		{DF135C24-2FC8-46AD-A3BF-6ABB775CC671}.Release-Sadid|Any CPU.ActiveCfg = Release|Any CPU
+		{DF135C24-2FC8-46AD-A3BF-6ABB775CC671}.Release-Sadid|Any CPU.Build.0 = Release|Any CPU
+		{DF135C24-2FC8-46AD-A3BF-6ABB775CC671}.Release-Sadid|x86.ActiveCfg = Release|Any CPU
+		{DF135C24-2FC8-46AD-A3BF-6ABB775CC671}.Release-Sadid|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A79D4DD5-DF56-4995-BD8B-972B895DC6A3}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://fater.info:8080/tfs/stopwatch
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = WebServer\\WebServer.csproj
+		SccProjectName1 = WebServer
+		SccLocalPath1 = WebServer
+		SccProjectUniqueName2 = stopwatch\\Stopwatch.csproj
+		SccProjectName2 = stopwatch
+		SccLocalPath2 = stopwatch
+		SccProjectUniqueName3 = API_test\\API_test.csproj
+		SccProjectName3 = API_test
+		SccLocalPath3 = API_test
+	EndGlobalSection
+EndGlobal
