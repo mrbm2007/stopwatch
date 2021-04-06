@@ -1,0 +1,596 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A8BFA025-5F26-4977-89A5-3D672BF2B16D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>stopwatch</RootNamespace>
+    <AssemblyName>stopwatch</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <PublishUrl>D:\Work\stopwatch\Setup\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Background</UpdateMode>
+    <UpdateInterval>5</UpdateInterval>
+    <UpdateIntervalUnits>Hours</UpdateIntervalUnits>
+    <UpdatePeriodically>true</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <UpdateUrl>\\smalavi-pc\stopwatch\update\</UpdateUrl>
+    <ProductName>Stopwatch</ProductName>
+    <PublisherName>Mohammad Reza Borhanpanah</PublisherName>
+    <MinimumRequiredVersion>2.1.0.12</MinimumRequiredVersion>
+    <WebPage>index.htm</WebPage>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <ApplicationRevision>56</ApplicationRevision>
+    <ApplicationVersion>3.2.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;SADID</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;SADID</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>watch1.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>EF31ACE220862C79BE30A4F621B26B7B25FA716E</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>key.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>stopwatch.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>..\..\UAV\FloDyn\FloDynProj\FloDynProj.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>Custom</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release-Fater|x86'">
+    <OutputPath>bin\x86\Release-Fater\</OutputPath>
+    <DefineConstants>TRACE;FATER</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release-Fater|AnyCPU'">
+    <OutputPath>bin\Release-Fater\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FarsiCalendarComponent, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\FarsiCalendarComponent.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\dll\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="IrisSkin2">
+      <HintPath>..\dll\IrisSkin2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Access.cs" />
+    <Compile Include="Classes\MyDataBase\Project.cs" />
+    <Compile Include="Classes\MyDataBase\Settings.cs" />
+    <Compile Include="Classes\MyDataBase\Time_.cs" />
+    <Compile Include="Classes\MyDataBase\TSpan.cs" />
+    <Compile Include="Classes\MyDataBase\User.cs" />
+    <Compile Include="Classes\MyDictionary.cs" />
+    <Compile Include="Classes\PrayTime.cs" />
+    <Compile Include="Classes\Tools\Word.cs" />
+    <Compile Include="ErrorHandeler\ErrorHandler.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ErrorHandeler\ErrorHandler.designer.cs">
+      <DependentUpon>ErrorHandler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BackUpProj\Form_MRB_Git_view.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BackUpProj\Form_MRB_Git_view.Designer.cs">
+      <DependentUpon>Form_MRB_Git_view.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_manage1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Form_manage.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_notif.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_notif.Designer.cs">
+      <DependentUpon>Form_notif.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_user.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_user.Designer.cs">
+      <DependentUpon>Form_user.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Server\chat\uc_popup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Server\chat\uc_popup.Designer.cs">
+      <DependentUpon>uc_popup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Server\chat\uc_chat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Server\chat\uc_chat.Designer.cs">
+      <DependentUpon>uc_chat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Server\Form_server_report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Server\Form_server_report.Designer.cs">
+      <DependentUpon>Form_server_report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_EnterExit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_EnterExit.Designer.cs">
+      <DependentUpon>Form_EnterExit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_Gages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_Gages.Designer.cs">
+      <DependentUpon>Form_Gages.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_manage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_manage.Designer.cs">
+      <DependentUpon>Form_manage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Server\Form_users.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Server\Form_users.Designer.cs">
+      <DependentUpon>Form_users.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Report\Form_report_mahane.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Report\Form_report_mahane.Designer.cs">
+      <DependentUpon>Form_report_mahane.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Report\Form_report_save.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Report\Form_report_save.Designer.cs">
+      <DependentUpon>Form_report_save.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_idel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_idel.Designer.cs">
+      <DependentUpon>Form_idel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_list.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_list.Designer.cs">
+      <DependentUpon>Form_list.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Report\Form_performance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Report\Form_performance.Designer.cs">
+      <DependentUpon>Form_performance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BackUpProj\Form_MRB_Git.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BackUpProj\Form_MRB_Git.Designer.cs">
+      <DependentUpon>Form_MRB_Git.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BackUpProj\Form_MRB_Git_all.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BackUpProj\Form_MRB_Git_all.Designer.cs">
+      <DependentUpon>Form_MRB_Git_all.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BackUpProj\Form_MRB_Git_Warning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BackUpProj\Form_MRB_Git_Warning.Designer.cs">
+      <DependentUpon>Form_MRB_Git_Warning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_projectPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_projectPanel.Designer.cs">
+      <DependentUpon>Form_projectPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Report\Form_report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Report\Form_report.Designer.cs">
+      <DependentUpon>Form_report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_settings.Designer.cs">
+      <DependentUpon>Form_settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_msg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_msg.Designer.cs">
+      <DependentUpon>Form_msg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorHandeler\Form_error.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ErrorHandeler\Form_error.designer.cs">
+      <DependentUpon>Form_error.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Server\Form_chat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Server\Form_chat.Designer.cs">
+      <DependentUpon>Form_chat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Server\Form_hozoor_list.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Server\Form_hozoor_list.Designer.cs">
+      <DependentUpon>Form_hozoor_list.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Tools\CMD.cs" />
+    <Compile Include="Classes\Tools\IniFile.cs" />
+    <Compile Include="Classes\MRB_Git.cs" />
+    <Compile Include="Controls\DataGridViewDateColumn.cs" />
+    <Compile Include="Controls\DataGridViewProgressColumn.cs" />
+    <Compile Include="Classes\Tools\Excel.cs" />
+    <Compile Include="Classes\Gage.cs" />
+    <Compile Include="Classes\Tools\HotKey.cs" />
+    <Compile Include="Classes\MyDataBase\MyData.cs" />
+    <Compile Include="App\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Forms\Form_addTime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_addTime.Designer.cs">
+      <DependentUpon>Form_addTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\Settings.cs" />
+    <Compile Include="Controls\MyProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MyTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Classes\Tools\TicToc.cs" />
+    <Compile Include="Classes\Tools\Utils.cs" />
+    <Compile Include="Classes\WebServer.cs" />
+    <Compile Include="Classes\Tools\Zip.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BackUpProj\Form_MRB_Git_view.resx">
+      <DependentUpon>Form_MRB_Git_view.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_notif.resx">
+      <DependentUpon>Form_notif.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_user.resx">
+      <DependentUpon>Form_user.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Server\chat\uc_chat.resx">
+      <DependentUpon>uc_chat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Server\chat\uc_popup.resx">
+      <DependentUpon>uc_popup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Server\Form_chat.resx">
+      <DependentUpon>Form_chat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Server\Form_server_report.resx">
+      <DependentUpon>Form_server_report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_EnterExit.resx">
+      <DependentUpon>Form_EnterExit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_Gages.resx">
+      <DependentUpon>Form_Gages.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_manage.resx">
+      <DependentUpon>Form_manage.cs</DependentUpon>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Form_manage1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Server\Form_users.resx">
+      <DependentUpon>Form_users.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Report\Form_report_mahane.resx">
+      <DependentUpon>Form_report_mahane.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Report\Form_report_save.resx">
+      <DependentUpon>Form_report_save.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_idel.resx">
+      <DependentUpon>Form_idel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_list.resx">
+      <DependentUpon>Form_list.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Report\Form_performance.resx">
+      <DependentUpon>Form_performance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BackUpProj\Form_MRB_Git.resx">
+      <DependentUpon>Form_MRB_Git.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BackUpProj\Form_MRB_Git_all.resx">
+      <DependentUpon>Form_MRB_Git_all.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BackUpProj\Form_MRB_Git_Warning.resx">
+      <DependentUpon>Form_MRB_Git_Warning.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_projectPanel.resx">
+      <DependentUpon>Form_projectPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Report\Form_report.resx">
+      <DependentUpon>Form_report.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_settings.resx">
+      <DependentUpon>Form_settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_msg.resx">
+      <DependentUpon>Form_msg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ErrorHandeler\Form_error.resx">
+      <DependentUpon>Form_error.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Server\Form_hozoor_list.resx">
+      <DependentUpon>Form_hozoor_list.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Forms\Form_addTime.resx">
+      <DependentUpon>Form_addTime.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\DeepGreen.ssk" />
+    <None Include="Resources\DeepOrange.ssk" />
+    <None Include="Resources\EighteenColor1.ssk" />
+    <None Include="Resources\MacOS.ssk" />
+    <None Include="Resources\metal.ssk" />
+    <None Include="Resources\Page.ssk" />
+    <None Include="Resources\project.docx" />
+    <None Include="Resources\project_info.xlsx" />
+    <None Include="Resources\research.docx" />
+    <None Include="Resources\Silver.ssk" />
+    <None Include="Resources\SilverColor1.ssk" />
+    <None Include="Resources\sum.xlsm" />
+    <None Include="Resources\times.xlsx" />
+    <None Include="BNAZANB.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pt.png" />
+    <None Include="Resources\borhan-small.png" />
+    <Content Include="setup.ico" />
+    <Content Include="watch1.ico" />
+    <None Include="Resources\notif_back.png" />
+    <None Include="Resources\total.xlsx" />
+    <None Include="Resources\total_personel.xlsx" />
+    <None Include="Resources\Vazir.ttf" />
+    <None Include="Resources\Warning_16x16.png" />
+    <None Include="Resources\CheckUp1.png" />
+    <None Include="Resources\Error_16x161.png" />
+    <None Include="Resources\loading191.gif" />
+    <None Include="Resources\loading19.gif" />
+    <None Include="Resources\CheckUp.png" />
+    <None Include="Resources\Error_16x16.png" />
+    <None Include="Resources\Summary_16x16.png" />
+    <None Include="Resources\ZipCode_16x16.png" />
+    <None Include="Resources\Cancel_16x16.png" />
+    <None Include="Resources\right.png" />
+    <None Include="Resources\left.png" />
+    <None Include="Resources\RunWithDelay.exe" />
+    <None Include="Resources\Question_16x16.png" />
+    <None Include="Resources\pie_1.htc" />
+    <None Include="Resources\computer %2828%29.png" />
+    <None Include="Resources\Toolbox_16x16.png" />
+    <None Include="Resources\Demo_Complex_Validation_Settings.png" />
+    <None Include="Resources\ServerMode_16x16.png" />
+    <None Include="Resources\Attachment_16x16.png" />
+    <None Include="Resources\BO_Users.png" />
+    <None Include="Resources\gear_blue %281%29.png" />
+    <None Include="Resources\door_out.png" />
+    <None Include="Resources\poll_blue.png" />
+    <None Include="Resources\gear_blue.png" />
+    <None Include="Resources\signal_flag_yellow.png" />
+    <None Include="Resources\signal_flag_white.png" />
+    <None Include="Resources\signal_flag_red.png" />
+    <None Include="Resources\signal_flag_green.png" />
+    <None Include="Resources\signal_flag_blue.png" />
+    <None Include="Resources\MergeCenter_16x16.png" />
+    <None Include="Resources\signal_flag_white.ico" />
+    <None Include="Resources\signal_flag_red.ico" />
+    <None Include="Resources\signal_flag_green.ico" />
+    <None Include="Resources\signal_flag_yellow.ico" />
+    <None Include="Resources\signal_flag_blue.ico" />
+    <None Include="Resources\logo.PNG" />
+    <None Include="Resources\copyToolStripMenuItem.Image.png" />
+    <None Include="Resources\%24person.Icon.ico" />
+    <None Include="Resources\zip.png" />
+    <None Include="Resources\login-icon2.png" />
+    <None Include="Resources\hedsaReportToolStripMenuItem.Image.png" />
+    <None Include="Resources\notifyIcon1.Icon.ico" />
+    <None Include="Resources\%24this.Icon.ico" />
+    <None Include="Resources\address_book_edit.png" />
+    <None Include="Resources\gnome_document_send.png" />
+    <None Include="Resources\bottom1.png" />
+    <None Include="Resources\bot1.png" />
+    <None Include="Resources\mid1.png" />
+    <None Include="Resources\mid.png" />
+    <None Include="Resources\bottom.png" />
+    <None Include="Resources\bot.png" />
+    <None Include="Resources\top.png" />
+    <None Include="Resources\arrow_top1.png" />
+    <None Include="Resources\arrow_down2.png" />
+    <None Include="Resources\list.png" />
+    <None Include="Resources\pause.png" />
+    <None Include="Resources\resume.png" />
+    <None Include="Resources\settings.png" />
+    <None Include="Resources\start.png" />
+    <None Include="Resources\stop.png" />
+    <None Include="Resources\Folder_16x16.png" />
+    <None Include="Resources\AlignJustify_16x16.png" />
+    <None Include="Resources\ListBullets_16x16.png" />
+    <Content Include="App\stopwatch.ico" />
+    <None Include="Resources\question_shield.png" />
+    <None Include="Resources\AddToLibrary_16x16.png" />
+    <None Include="Resources\agt_update_misc_5F256.png" />
+    <None Include="Resources\GenerateData_16x16.png" />
+    <None Include="Resources\Copy_16x16.png" />
+    <None Include="Resources\delete-16x16.png" />
+    <None Include="Resources\Close_16x16.png" />
+    <None Include="Resources\icontexto-webdev-ok-016x016.png" />
+    <None Include="Resources\Save_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy $(TargetPath) $(SolutionDir)dll\$(SolutionName).dll</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
